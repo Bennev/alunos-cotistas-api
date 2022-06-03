@@ -44,6 +44,7 @@ public class AlunoController {
         try {
             alunoService.importarDadosExcel(files);
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
     }
