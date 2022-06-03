@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "situacoes_periodo", schema = "alunos_cotistas")
+@Table(name = "situacoes_periodo", schema = "public")
 public class SituacaoPeriodo implements Serializable {
 
     @Id

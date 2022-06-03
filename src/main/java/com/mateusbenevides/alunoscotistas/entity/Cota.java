@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "cotas", schema = "alunos_cotistas")
+@Table(name = "cotas", schema = "public")
 public class Cota implements Serializable {
 
     @Id
