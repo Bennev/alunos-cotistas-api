@@ -83,12 +83,16 @@ public class AlunoServiceImpl implements AlunoService {
                         }
                         Campus campus = Campus.valueOf(String.valueOf(getValue(row.getCell(0))).replace(' ', '_'));
                         Nivel nivel = Nivel.valueOf(String.valueOf(getValue(row.getCell(1))).replace(' ', '_').toUpperCase());
+                        System.out.println("Erro 1");
                         Curso curso = cursoRepository.findByNome(String.valueOf(getValue(row.getCell(2))));
                         String periodoLetivo = String.valueOf(row.getCell(3));
                         Long matricula = Long.parseLong(row.getCell(4).toString());
                         String nome = String.valueOf(row.getCell(5));
+                        System.out.println("Erro 2");
                         Cota cota = cotaRepository.findByNome(String.valueOf(getValue(row.getCell(6))));
+                        System.out.println("Erro 3");
                         SituacaoMatricula situacaoMatricula = situacaoMatriculaRepository.findByNome(String.valueOf(getValue(row.getCell(7))));
+                        System.out.println("Erro 4");
                         SituacaoPeriodo situacaoPeriodo = situacaoPeriodoRepository.findByNome(String.valueOf(getValue(row.getCell(8))));
                         Date nascimento = row.getCell(9).getDateCellValue();
                         Sexo sexo = Sexo.valueOf(String.valueOf(getValue(row.getCell(10))));
