@@ -1,4 +1,4 @@
-package com.mateusbenevides.alunoscotistas.entity;
+package com.matheusbenevides.alunoscotistas.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
@@ -18,8 +18,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "cursos", schema = "public")
-public class Curso implements Serializable {
+@Table(name = "situacoes_matricula", schema = "public")
+public class SituacaoMatricula implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,6 @@ public class Curso implements Serializable {
     private String nome;
 
     @JsonManagedReference
-    @OneToMany(mappedBy = "curso")
+    @OneToMany(mappedBy = "situacaoMatricula")
     private List<Aluno> alunos;
-
 }

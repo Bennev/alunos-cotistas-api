@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mateusbenevides.alunoscotistas.serviceImpl;
+package com.matheusbenevides.alunoscotistas.serviceImpl;
 
-import com.mateusbenevides.alunoscotistas.entity.Aluno;
-import com.mateusbenevides.alunoscotistas.entity.Cota;
-import com.mateusbenevides.alunoscotistas.entity.Curso;
-import com.mateusbenevides.alunoscotistas.entity.SituacaoMatricula;
-import com.mateusbenevides.alunoscotistas.entity.SituacaoPeriodo;
-import com.mateusbenevides.alunoscotistas.enums.Campus;
-import com.mateusbenevides.alunoscotistas.enums.Nivel;
-import com.mateusbenevides.alunoscotistas.enums.Sexo;
-import com.mateusbenevides.alunoscotistas.repository.AlunoRepository;
-import com.mateusbenevides.alunoscotistas.repository.CotaRepository;
-import com.mateusbenevides.alunoscotistas.repository.CursoRepository;
-import com.mateusbenevides.alunoscotistas.repository.SituacaoMatriculaRepository;
-import com.mateusbenevides.alunoscotistas.repository.SituacaoPeriodoRepository;
-import com.mateusbenevides.alunoscotistas.service.AlunoService;
+import com.matheusbenevides.alunoscotistas.entity.Aluno;
+import com.matheusbenevides.alunoscotistas.entity.Cota;
+import com.matheusbenevides.alunoscotistas.entity.Curso;
+import com.matheusbenevides.alunoscotistas.entity.SituacaoMatricula;
+import com.matheusbenevides.alunoscotistas.entity.SituacaoPeriodo;
+import com.matheusbenevides.alunoscotistas.enums.Campus;
+import com.matheusbenevides.alunoscotistas.enums.Nivel;
+import com.matheusbenevides.alunoscotistas.enums.Sexo;
+import com.matheusbenevides.alunoscotistas.repository.AlunoRepository;
+import com.matheusbenevides.alunoscotistas.repository.CotaRepository;
+import com.matheusbenevides.alunoscotistas.repository.CursoRepository;
+import com.matheusbenevides.alunoscotistas.repository.SituacaoMatriculaRepository;
+import com.matheusbenevides.alunoscotistas.repository.SituacaoPeriodoRepository;
+import com.matheusbenevides.alunoscotistas.service.AlunoService;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -58,7 +58,7 @@ public class AlunoServiceImpl implements AlunoService {
                 .matching()
                 .withIgnoreCase()
                 .withStringMatcher(
-                        ExampleMatcher.StringMatcher.CONTAINING);
+                        ExampleMatcher.StringMatcher.EXACT);
         Example example = Example.of(alunoFiltro, matcher);
         return alunoRepository.findAll(example);
     }
