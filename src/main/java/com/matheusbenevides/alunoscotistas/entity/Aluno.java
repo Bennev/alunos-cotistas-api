@@ -1,9 +1,9 @@
-package com.mateusbenevides.alunoscotistas.entity;
+package com.matheusbenevides.alunoscotistas.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.mateusbenevides.alunoscotistas.enums.Campus;
-import com.mateusbenevides.alunoscotistas.enums.Nivel;
-import com.mateusbenevides.alunoscotistas.enums.Sexo;
+import com.matheusbenevides.alunoscotistas.enums.Campus;
+import com.matheusbenevides.alunoscotistas.enums.Nivel;
+import com.matheusbenevides.alunoscotistas.enums.Sexo;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;

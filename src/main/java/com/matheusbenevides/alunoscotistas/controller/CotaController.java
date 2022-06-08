@@ -1,7 +1,7 @@
-package com.mateusbenevides.alunoscotistas.controller;
+package com.matheusbenevides.alunoscotistas.controller;
 
-import com.mateusbenevides.alunoscotistas.entity.Cota;
-import com.mateusbenevides.alunoscotistas.service.CotaService;
+import com.matheusbenevides.alunoscotistas.entity.Cota;
+import com.matheusbenevides.alunoscotistas.service.CotaService;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;

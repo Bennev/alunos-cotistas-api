@@ -1,4 +1,4 @@
-package com.mateusbenevides.alunoscotistas.enums;
+package com.matheusbenevides.alunoscotistas.enums;
 
 public enum Nivel {
     INTEGRADO,

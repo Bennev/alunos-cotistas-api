@@ -1,8 +1,8 @@
-package com.mateusbenevides.alunoscotistas.serviceImpl;
+package com.matheusbenevides.alunoscotistas.serviceImpl;
 
-import com.mateusbenevides.alunoscotistas.entity.Cota;
-import com.mateusbenevides.alunoscotistas.repository.CotaRepository;
-import com.mateusbenevides.alunoscotistas.service.CotaService;
+import com.matheusbenevides.alunoscotistas.entity.Cota;
+import com.matheusbenevides.alunoscotistas.repository.CotaRepository;
+import com.matheusbenevides.alunoscotistas.service.CotaService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

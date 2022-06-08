@@ -1,6 +1,6 @@
-package com.mateusbenevides.alunoscotistas.service;
+package com.matheusbenevides.alunoscotistas.service;
 
-import com.mateusbenevides.alunoscotistas.entity.Aluno;
+import com.matheusbenevides.alunoscotistas.entity.Aluno;
 import java.util.List;
 import org.springframework.web.multipart.MultipartFile;
 
