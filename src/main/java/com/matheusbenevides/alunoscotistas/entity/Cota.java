@@ -1,5 +1,6 @@
 package com.matheusbenevides.alunoscotistas.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
 import java.util.List;
@@ -28,8 +29,8 @@ public class Cota implements Serializable {
     @Column
     private String nome;
 
+    @JsonIgnore
     @JsonManagedReference
     @OneToMany(mappedBy = "cota")
     private List<Aluno> alunos;
-
 }
