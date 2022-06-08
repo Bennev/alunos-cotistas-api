@@ -1,6 +1,7 @@
 package com.matheusbenevides.alunoscotistas.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
 import java.util.List;
@@ -20,6 +21,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "cotas", schema = "public")
+@JsonIgnoreProperties(value = {"alunos"})
 public class Cota implements Serializable {
 
     @Id
