@@ -25,7 +25,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "alunos", schema = "public")
-@JsonIgnoreProperties(value = {"matricula", "nome", "nascimento", "sexo", "cpf", "telefones", "email", "emailInstitucional"})
+@JsonIgnoreProperties(value = {"matricula", "nascimento", "sexo", "cpf", "telefones", "email", "emailInstitucional"})
 public class Aluno implements Serializable {
 
     @Id
