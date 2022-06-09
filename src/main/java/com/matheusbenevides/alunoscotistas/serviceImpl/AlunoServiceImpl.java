@@ -6,14 +6,15 @@
 package com.matheusbenevides.alunoscotistas.serviceImpl;
 
 import com.matheusbenevides.alunoscotistas.entity.Aluno;
+import com.matheusbenevides.alunoscotistas.entity.Campus;
 import com.matheusbenevides.alunoscotistas.entity.Cota;
 import com.matheusbenevides.alunoscotistas.entity.Curso;
 import com.matheusbenevides.alunoscotistas.entity.SituacaoMatricula;
 import com.matheusbenevides.alunoscotistas.entity.SituacaoPeriodo;
-import com.matheusbenevides.alunoscotistas.enums.Campus;
 import com.matheusbenevides.alunoscotistas.enums.Nivel;
 import com.matheusbenevides.alunoscotistas.enums.Sexo;
 import com.matheusbenevides.alunoscotistas.repository.AlunoRepository;
+import com.matheusbenevides.alunoscotistas.repository.CampusRepository;
 import com.matheusbenevides.alunoscotistas.repository.CotaRepository;
 import com.matheusbenevides.alunoscotistas.repository.CursoRepository;
 import com.matheusbenevides.alunoscotistas.repository.SituacaoMatriculaRepository;
@@ -42,6 +43,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class AlunoServiceImpl implements AlunoService {
 
     private final AlunoRepository alunoRepository;
+    private final AlunoRepository campusRepository;
     private final CursoRepository cursoRepository;
     private final CotaRepository cotaRepository;
     private final SituacaoMatriculaRepository situacaoMatriculaRepository;
@@ -81,7 +83,7 @@ public class AlunoServiceImpl implements AlunoService {
                         if (rowIndex == 0) {
                             continue;
                         }
-                        Campus campus = Campus.valueOf(String.valueOf(getValue(row.getCell(0))).replace(' ', '_'));
+                        Campus campus = campusRepository.findByNome(String.valueOf(getValue(row.getCell(0))).replace(' ', '_'));
                         Nivel nivel = Nivel.valueOf(String.valueOf(getValue(row.getCell(1))).replace(' ', '_').toUpperCase());
                         System.out.println("Erro 1");
                         Curso curso = cursoRepository.findByNome(String.valueOf(getValue(row.getCell(2))));

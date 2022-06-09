@@ -1,7 +1,6 @@
 package com.matheusbenevides.alunoscotistas.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.matheusbenevides.alunoscotistas.enums.Campus;
 import com.matheusbenevides.alunoscotistas.enums.Nivel;
 import com.matheusbenevides.alunoscotistas.enums.Sexo;
 import java.io.Serializable;
@@ -31,7 +30,9 @@ public class Aluno implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @ManyToOne
+    @JsonBackReference
+    @JoinColumn(name = "id_campus", referencedColumnName = "id")
     private Campus campus;
 
     @Column
