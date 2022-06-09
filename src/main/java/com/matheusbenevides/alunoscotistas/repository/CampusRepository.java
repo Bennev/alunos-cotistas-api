@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CampusRepository extends JpaRepository<Campus, Long> {
 
-    Campus findByNome(String nome);
+    Campus findBySlug(String slug);
 
 }

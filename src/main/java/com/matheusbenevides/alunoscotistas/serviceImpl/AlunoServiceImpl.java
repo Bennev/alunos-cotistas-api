@@ -83,7 +83,7 @@ public class AlunoServiceImpl implements AlunoService {
                         if (rowIndex == 0) {
                             continue;
                         }
-                        Campus campus = campusRepository.findByNome(String.valueOf(getValue(row.getCell(0))).replace(' ', '_'));
+                        Campus campus = campusRepository.findBySlug(String.valueOf(getValue(row.getCell(0))).replace(' ', '_'));
                         Nivel nivel = Nivel.valueOf(String.valueOf(getValue(row.getCell(1))).replace(' ', '_').toUpperCase());
                         System.out.println("Erro 1");
                         Curso curso = cursoRepository.findByNome(String.valueOf(getValue(row.getCell(2))));
