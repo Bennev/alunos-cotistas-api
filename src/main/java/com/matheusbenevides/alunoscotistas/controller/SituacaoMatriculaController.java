@@ -21,6 +21,6 @@ public class SituacaoMatriculaController {
 
     @GetMapping
     public List<SituacaoMatricula> getSituacaoMatriculas() {
-        return situacaomatriculaService.buscarSituacaoMatriculas();
+        return situacaomatriculaService.buscarSituacoes_matricula();
     }    
 }

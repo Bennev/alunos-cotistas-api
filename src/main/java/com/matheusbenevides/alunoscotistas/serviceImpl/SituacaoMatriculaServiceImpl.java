@@ -14,7 +14,7 @@ public class SituacaoMatriculaServiceImpl implements SituacaoMatriculaService {
     private final SituacaoMatriculaRepository situacaomatriculaRepository;
 
     @Override
-    public List<SituacaoMatricula> buscarSituacaoMatriculas() {
+    public List<SituacaoMatricula> buscarSituacoes_matricula() {
         return situacaomatriculaRepository.findAll();
     }
   

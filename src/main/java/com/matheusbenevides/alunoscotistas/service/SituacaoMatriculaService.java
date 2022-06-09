@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface SituacaoMatriculaService {
     
-    List<SituacaoMatricula> buscarSituacaoMatriculas();
+    List<SituacaoMatricula> buscarSituacoes_matricula();
 }
