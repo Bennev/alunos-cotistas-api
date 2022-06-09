@@ -1,6 +1,7 @@
 package com.matheusbenevides.alunoscotistas.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.matheusbenevides.alunoscotistas.enums.Nivel;
 import com.matheusbenevides.alunoscotistas.enums.Sexo;
 import java.io.Serializable;
@@ -24,6 +25,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "alunos", schema = "public")
+@JsonIgnoreProperties(value = {"matricula", "nome", "nascimento", "sexo", "cpf", "telefones", "email", "emailInstitucional"})
 public class Aluno implements Serializable {
 
     @Id
