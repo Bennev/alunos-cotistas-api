@@ -57,7 +57,6 @@ INSERT INTO public.cursos(id, nome) VALUES (6, 'Mestrado em Engenharia de Teleco
 INSERT INTO public.cursos(id, nome) VALUES (7, 'Licenciatura em Teatro');
 INSERT INTO public.cursos(id, nome) VALUES (8, 'Licenciatura em Física');
 INSERT INTO public.cursos(id, nome) VALUES (9, 'Bacharelado em Engenharia de Mecatrônica');
-INSERT INTO public.cursos(id, nome) VALUES (10, 'Licenciatura em Matemática');
 INSERT INTO public.cursos(id, nome) VALUES (11, 'Técnico em Manutenção Automotiva');
 INSERT INTO public.cursos(id, nome) VALUES (12, 'Integrado em Eletrotécnica');
 INSERT INTO public.cursos(id, nome) VALUES (13, 'Bacharelado em Engenharia de Computação');
