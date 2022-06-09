@@ -43,7 +43,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class AlunoServiceImpl implements AlunoService {
 
     private final AlunoRepository alunoRepository;
-    private final AlunoRepository campusRepository;
+    private final CampusRepository campusRepository;
     private final CursoRepository cursoRepository;
     private final CotaRepository cotaRepository;
     private final SituacaoMatriculaRepository situacaoMatriculaRepository;
