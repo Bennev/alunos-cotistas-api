@@ -1,7 +1,10 @@
 package com.matheusbenevides.alunoscotistas.controller;
 
 import com.matheusbenevides.alunoscotistas.entity.Aluno;
+import com.matheusbenevides.alunoscotistas.enums.Campus;
+import com.matheusbenevides.alunoscotistas.enums.Nivel;
 import com.matheusbenevides.alunoscotistas.service.AlunoService;
+import java.util.Arrays;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
@@ -37,6 +40,16 @@ public class AlunoController {
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
+    }
+
+    @GetMapping("/campus")
+    public List<Campus> getCampus() {
+        return Arrays.asList(Campus.values());
+    }
+
+    @GetMapping("/nivel")
+    public List<Nivel> getNiveis() {
+        return Arrays.asList(Nivel.values());
     }
 
     @PostMapping("/importDb")
