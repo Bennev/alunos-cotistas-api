@@ -30,10 +30,13 @@ public class Campus implements Serializable {
 
     @Column
     private String nome;
-    
+
+    @Column
+    private String slug;
+
     @Column
     private Double lat;
-    
+
     @Column
     private Double lng;
 
