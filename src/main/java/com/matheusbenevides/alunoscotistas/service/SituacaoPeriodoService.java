@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface SituacaoPeriodoService {
         
-    List<SituacaoPeriodo> buscarSituacoes_periodo();
+    List<SituacaoPeriodo> buscarSituacoesPeriodo();
 }

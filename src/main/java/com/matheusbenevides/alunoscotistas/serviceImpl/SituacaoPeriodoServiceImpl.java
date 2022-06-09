@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class SituacaoPeriodoServiceImpl implements SituacaoPeriodoService {
- 
-    private final SituacaoPeriodoRepository situacaoperiodoRepository;
+
+    private final SituacaoPeriodoRepository situacaoPeriodoRepository;
 
     @Override
-    public List<SituacaoPeriodo> buscarSituacoes_periodo() {
-        return situacaoperiodoRepository.findAll();
+    public List<SituacaoPeriodo> buscarSituacoesPeriodo() {
+        return situacaoPeriodoRepository.findAll();
     }
-     
+
 }

@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/situacaoperiodo")
+@RequestMapping("/situacaoPeriodo")
 @AllArgsConstructor
 public class SituacaoPeriodoController {
 
-    private final SituacaoPeriodoService situacaoperiodoService;
+    private final SituacaoPeriodoService situacaoPeriodoService;
 
     private final static Logger logger = LoggerFactory.getLogger(SituacaoPeriodoController.class);
 
     @GetMapping
     public List<SituacaoPeriodo> getSituacaoPeriodos() {
-        return situacaoperiodoService.buscarSituacoes_periodo();
-    }      
+        return situacaoPeriodoService.buscarSituacoesPeriodo();
+    }
 }

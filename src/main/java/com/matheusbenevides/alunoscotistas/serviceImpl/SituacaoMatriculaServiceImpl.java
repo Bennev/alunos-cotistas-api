@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SituacaoMatriculaServiceImpl implements SituacaoMatriculaService {
 
-    private final SituacaoMatriculaRepository situacaomatriculaRepository;
+    private final SituacaoMatriculaRepository situacaoMatriculaRepository;
 
     @Override
-    public List<SituacaoMatricula> buscarSituacoes_matricula() {
-        return situacaomatriculaRepository.findAll();
+    public List<SituacaoMatricula> buscarSituacoesMatricula() {
+        return situacaoMatriculaRepository.findAll();
     }
-  
+
 }

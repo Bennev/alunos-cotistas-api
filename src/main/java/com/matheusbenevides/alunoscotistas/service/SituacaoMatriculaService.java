@@ -4,6 +4,6 @@ import com.matheusbenevides.alunoscotistas.entity.SituacaoMatricula;
 import java.util.List;
 
 public interface SituacaoMatriculaService {
-    
-    List<SituacaoMatricula> buscarSituacoes_matricula();
+
+    List<SituacaoMatricula> buscarSituacoesMatricula();
 }

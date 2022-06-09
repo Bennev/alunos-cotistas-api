@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "situacoes_matricula", schema = "public")
+@Table(name = "SituacoesMatricula", schema = "public")
 @JsonIgnoreProperties(value = {"alunos"})
 public class SituacaoMatricula implements Serializable {
 
